@@ -48,6 +48,11 @@ srcフォルダ以下の相関図を可視化
 ![相関図](dependency-graph.svg)
 
 ※ SVGファイル
+
 Graphvizをインストールしてこのように相関関係を可視化します。
 
+![tRPCvsGraphQLvsREST](trpcgraphqlrest.svg)
+tRPCvsGraphQLvsREST
 
+![tRPCvsGraphQLvsREST](trpcgraphqlrest2.svg)
+tRPCvsGraphQLvsRESTベン図
