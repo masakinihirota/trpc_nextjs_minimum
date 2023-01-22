@@ -1,4 +1,5 @@
 // クライアント側
+// データを取得するため
 import { httpBatchLink, loggerLink, httpLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
 import type { AppRouter } from '../server/routers/_app';
@@ -7,7 +8,12 @@ import type { AppRouter } from '../server/routers/_app';
 // your typesafe tRPC hooks
 export const trpc = createTRPCNext<AppRouter>({
   config() {
-    // apiをローカルホストに設定
+    // APIエンドポイント
+    // ローカルホストのポート3000/api/trpcに設定
+    // これにsrc\server\routers\_app.tsで設定した
+    // プロシージャ関数を合わせてアクセスする
+    // 今回の例
+    // http://localhost:3000/api/trpc/hello
     const url = `http://localhost:3000/api/trpc`;
     return {
       // ルーターを設定
