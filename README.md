@@ -54,5 +54,6 @@ Graphvizをインストールしてこのように相関関係を可視化しま
 ![tRPCvsGraphQLvsREST](trpcgraphqlrest.svg)
 tRPCvsGraphQLvsREST
 
+# 現在の勢力図
 ![tRPCvsGraphQLvsREST](trpcgraphqlrest2.svg)
 tRPCvsGraphQLvsRESTベン図
