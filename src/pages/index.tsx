@@ -11,6 +11,8 @@ export default function IndexPage() {
   const hello = trpc.hello.useQuery({ text: '[名前]' });
   //            ^^^^^ "trpc."入力後、helloが補完候補に出てくる。
   // useQueryにカーソルを当てるとuseQueryの引数に設定するオブジェクトの情報が表示されます。
+  // useQueryの引数に間違った情報を入れるとエラーになります。
+  //  例えば'[名前]'の部分を数値にするとエラーになります。
 
   // hello.statusに通信のステータスが入ります。
   // この中にloadingやerrorなどが保存されています。

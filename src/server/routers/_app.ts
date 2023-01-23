@@ -19,7 +19,7 @@ export const appRouter = router({
   hello: procedure
     .input(
       z.object({
-        text: z.string(),
+        text: z.string()
       }),
     )
     // 正常なデータと判断したら
